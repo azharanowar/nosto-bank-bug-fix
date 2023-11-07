@@ -22,4 +22,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const previousBalanceTotal = getTextElementValueById("balance-total");
   const newBalanceTotal = previousBalanceTotal + newDepositAmount;
   setTextElementValueById("balance-total", newBalanceTotal);
+  
+  //Clear input field value.
+  document.getElementById("deposit-field").value = '';
 });

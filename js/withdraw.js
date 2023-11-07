@@ -17,4 +17,7 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   const previousBalanceTotal = getTextElementValueById("balance-total");
   const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
   setTextElementValueById("balance-total", newBalanceTotal);
+
+  // Clear input field after withdraw
+  document.getElementById("withdraw-field").value = '';
 });
